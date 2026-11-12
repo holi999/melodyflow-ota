@@ -1,6 +1,6 @@
 {
-  "version": "1.0.9",
-  "release_date": "2026-11-11",
-  "changelog": "MelodyFlow 1.0.9 更新：\n1. 【新特性】深度适配 CloudDrive2 (CD2) 网盘挂载：全面支持 WebDAV 协议无缝对接 115、夸克、阿里云盘、百度网盘等；\n2. 【功能】系统设置新增网盘提供商一键切换（Alist / CD2），支持自动探测 CD2 端口 19798 与一键连通性自检；\n3. 【加固】统一云端下载与空间清理适配器，原生支持 WebDAV Basic Auth 认证与断点续传。",
+  "version": "1.0.10",
+  "release_date": "2026-11-12",
+  "changelog": "MelodyFlow 1.0.10 更新：\n1. 【修复】FLAC 歌词写入播放器真正读取的标签（SYNCEDLYRICS / UNSYNCEDLYRICS），此前只写 lyrics 导致新歌词不生效、播放器仍显示旧歌词；\n2. 【修复】写入新歌词时自动清理文件内残留的旧歌词键，避免新旧歌词并存；\n3. 【优化】带时间轴的歌词会同时写入同步版与纯文本版，无时间轴则只写纯文本版。",
   "min_schema_version": 1
 }
