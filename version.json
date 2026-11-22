@@ -1,6 +1,6 @@
 {
-  "version": "1.0.13",
-  "release_date": "2026-11-21",
-  "changelog": "MelodyFlow 1.0.13 更新：\n1. 【修复】公众号资源广告标签不再随打标残留：FLAC/OGG 打标时自动清洗 COMMENT/ALBUMARTIST/DESCRIPTION 等次要字段中的推广文本（QQ群号、公众号、无损音乐站等），广告字段直接删除；\n2. 【修复】歌手名点前缀（如 .陶喆/.五月天，公众号资源常见）自动剥离；\n3. 【同步】与主管线 sq_ingest 的广告清洗规则保持一致。",
+  "version": "1.0.14",
+  "release_date": "2026-11-22",
+  "changelog": "MelodyFlow 1.0.14 更新：\n1. 【修复】磁力协议正则收敛（magnet:[?].*），彻底解决 ILLIT《Magnetic》等英文单词被误判为垃圾名置空的问题；\n2. 【修复】裸「未知」增加有效歌手保护，修复容祖儿成名作《未知》遭误判清空歌名的问题；\n3. 【新增】反向歌手消歧引擎（Inverted Artist Matching）：针对剥离公众号前缀后仅剩歌手名的音频，通过时长严格吻合（<=2.5s）与歌手高置信相似度（>=0.80）自动反转识别真实歌名与歌手；\n4. 【同步】与主管线 sq_ingest 及 CloudMelody 全面同步三端音乐治理能力。",
   "min_schema_version": 1
 }
